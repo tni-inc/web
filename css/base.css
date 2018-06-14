@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* base.css
+------------------------------------------ */
+html{overflow-y:scroll;}
+body{background-color:#ffffff;-webkit-text-size-adjust:100%;width:100%;}
+html,body,input,select,textarea,button{font-size:14px;color:#000000;font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif;}
+body,header,footer,section,article,nav,main,aside,div,pre,p,blockquote,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,input,textarea,th,td,address,table{margin:0;padding:0;}
+body,header,footer,section,article,nav,main,aside,p,h1,h2,h3,h4,h5,h6,li,th,td,dt,dd,pre,legend,input,select,textarea,caption{line-height:1.6;text-align:left;}
+table{border:none;border-spacing:0;border-collapse:collapse;}
+table th,
+table td{text-align:left;vertical-align:top;}
+img,a img,fieldset{border:none;}
+li{list-style-type:none;}
+address,em{font-style:normal;}
+h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}
+sup{vertical-align:top;}
+a,a:link,a:visited{color:#494949;text-decoration:underline;}
+a:hover,a:active{color:#494949;text-decoration:underline;}
+label{cursor:pointer;}
+input[type="text"],select{border:1px solid #bbbbbb;}
+main{display:block;}
+
+/* clearfix
+------------------------------------------ */
+.clearfix{overflow:hidden;}

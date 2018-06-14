@@ -1,0 +1,104 @@
+/* Header
+--------------------------------------------------------------------------------------------------*/
+header .header-inner{display:flex;margin:0 auto;position:relative;}
+header .header-inner .logo{font-size:0;}
+header .header-inner .logo img{vertical-align:top;}
+header .header-inner .menu{display:flex;}
+header .header-inner .catch{position:absolute;z-index:10;}
+header .main-image{background:url('../img/top.jpg') no-repeat center center;}
+
+/* Main
+--------------------------------------------------------------------------------------------------*/
+main .main-inner{padding-bottom:120px;}
+main .main-inner:nth-child(2n-1){background-color:#d9e7f2;}
+main .main-inner .box{width:1280px;margin:0 auto;}
+main .main-inner .box h2{width:1240px;margin:0 auto 35px auto;padding-top:120px;text-align:center;border-bottom:3px solid #b1cee6;}
+main .main-inner .box h2 .title{display:block;padding:0 0 35px 0;margin:0 auto -3px auto;border-bottom:3px solid #005bab;width:600px;}
+main .main-inner .box .content{width:1210px;margin:90px auto 0 auto;display:flex;}
+
+/* BUSINESS */
+main .main-inner .business .content{justify-content:space-between;}
+main .main-inner .business dl{width:254px;text-align:center;}
+main .main-inner .business dl .image img{display:block;margin:0 auto 45px auto;}
+
+/* COMPANY */
+main .main-inner #COMPANY{opacity:0;}
+main .main-inner .company .content{display:flex;justify-content:space-between;}
+main .main-inner .company .content dl{width:550px;}
+main .main-inner .company .content dl dt{color:#005bab;margin-bottom:30px;font-size:20px;font-weight:bold;}
+main .main-inner .company .content dl dd{margin-bottom:40px;}
+main .main-inner .company .content dl dd table td.right{text-align:right;}
+main .main-inner .company .content dl dd table td.pl10{padding-left:1em;}
+main .main-inner .company .content dl dd table td.pl15{padding-left:1.5em;}
+main .main-inner .company .content dl dd table td p{display:flex;justify-content:space-between;padding-right:1em;}
+
+/* ACCESS */
+main .main-inner #ACCESS{opacity:0;}
+main .main-inner .access .content dl{width:605px;}
+main .main-inner .access .content dl dt{color:#005bab;margin-bottom:30px;font-size:20px;font-weight:bold;}
+main .main-inner .access .content dl dd{margin-bottom:40px;}
+main .main-inner .access .content dl .station{margin-bottom:1em;}
+main .main-inner .access .content dl .station::before{content:"●";color:#005bab;}
+main .main-inner .access .content .map{width:600px;height:450px;}
+main .main-inner .access .content .map .ggmp {position:relative;width:100%;height:0;padding:110px 0 56.25% 0;overflow:hidden;}
+main .main-inner .access .content .map .ggmp iframe,
+main .main-inner .access .content .map .ggmp object,
+main .main-inner .access .content .map .ggmp embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+/* Footer
+--------------------------------------------------------------------------------------------------*/
+footer{background-color:#005bab;}
+footer p{text-align:center;color:white;font-size:10px;line-height:60px;}
+
+/* Media Query
+--------------------------------------------------------------------------------------------------*/
+
+/* PC Large */
+@media (min-width:769px) {
+  header{min-width: 1280px}
+  header .header-inner{width:1280px;}
+  header .header-inner .logo{width:352px;}
+  header .header-inner .logo .name{margin-top:18px;}
+  header .header-inner .menu{margin-top:25px;}
+  header .header-inner .menu li{margin:0 80px;}
+  header .header-inner .catch{top:240px;left:588px;width: 607px;}
+  header .main-image{height:500px;margin-top:-60px;}
+  main{min-width: 1280px}
+  footer{min-width: 1280px}
+}
+/* PC Middle or Tablet */
+/* @media (min-width:769px) and (max-width:1279px) {
+} */
+/* Smart Phone */
+@media (max-width:768px) {
+  html,body,input,select,textarea,button,dd,td{font-size:19px;max-height:100%;}
+  body{width:640px;}
+  header .header-inner .menu{display:none;}
+  header .main-image{height:414px;background:url(../img/sp_top.jpg) no-repeat center center;margin-top:-120px; background-size: 100%;}
+  header .header-inner{display: block;}
+  header .header-inner .logo{text-align: right;}
+  header .header-inner .logo .logo-img{width: 120px;}
+  header .header-inner .logo .name{display: none;}
+  header .header-inner .catch{width: 330px;top: 170px;left: 265px;}
+
+  main .main-inner,
+  main .main-inner .box{width:640px;}
+  main .main-inner .box h2{width:600px;margin:0 auto 32px auto;padding-top:114px;}
+  main .main-inner .box h2 .title{width:300px;}
+  main .main-inner .box .content{flex-flow: row wrap;width:600px;margin:85px auto 0 auto;}
+
+  main .main-inner .business .content{width:600px;}
+  main .main-inner .business .content dl{margin-bottom: 50px;width:280px;}
+  main .main-inner .business .content dt.image img {width:280px;}
+  main .main-inner .company .content dl{width:600px;}
+  main .main-inner .company .content dl dt,
+  main .main-inner .access .content dl dt{margin-bottom:20px;font-size:24px;}
+
+  footer p{font-size:16px;}
+
+
+}
+
+
+
+
